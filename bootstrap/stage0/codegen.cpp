@@ -4241,7 +4241,7 @@ __jakt_label_506:; __jakt_var_579.release_value(); }));
 };/*case end*/
 case 1: {
 return JaktInternal::ExplicitValue(({ Optional<DeprecatedString> __jakt_var_580; {
-DeprecatedString cast_type = TRY(DeprecatedString::from_utf8("verify_cast"sv));
+DeprecatedString cast_type = TRY(DeprecatedString::from_utf8("static_cast"sv));
 if (((type)->index() == 23 /* Struct */)){
 types::StructId const struct_id = ((type)->get<types::Type::Struct>()).value;
 if (((((((((*this).program))->get_struct(struct_id))).record_type)).index() == 1 /* Class */)){
