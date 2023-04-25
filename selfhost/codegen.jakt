@@ -2087,7 +2087,7 @@ struct CodeGenerator {
                             yield cast_type
                         }
                         Infallible => {
-                            mut cast_type = "verify_cast"
+                            mut cast_type = "static_cast"
                             if type is Struct(struct_id) and .program.get_struct(struct_id).record_type is Class {
                                 cast_type = "infallible_class_cast"
                             } else if .program.is_integer(type_id) {
